@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070908">
+  <title>Sign in — Understory</title>
+  <meta name="description" content="Sign in to Understory.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Geist:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="auth-page">
+    <header class="auth-header">
+      <a href="./" class="brand" aria-label="Understory — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M12 28 L12 11 M12 19 Q20 17 22 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M12 24 Q17 23 19 17" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" opacity="0.5"/>
+          <circle cx="22" cy="8" r="2.2" fill="#a3e635"/>
+        </svg>
+        <span class="brand-word">Under<em>story</em></span>
+      </a>
+      <a href="./" class="auth-back">← Back to site</a>
+    </header>
+
+    <main class="auth-main">
+      <div class="auth-shell">
+        <p class="eyebrow auth-eyebrow">// Client portal</p>
+        <h1 class="auth-title">Welcome <em>back.</em></h1>
+        <p class="auth-sub">Sign in to the growth ledger.</p>
+
+        <form class="auth-card" method="post" action="#" data-auth-form>
+          <div class="auth-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@yours.com" required>
+          </div>
+          <div class="auth-field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary auth-submit">Sign in <span aria-hidden="true">→</span></button>
+          <p class="auth-foot">No access yet? <a href="register.html">Request access</a></p>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
